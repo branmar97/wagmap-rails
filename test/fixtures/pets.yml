@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  primary_breed: one
+  secondary_breed: one
+  user: one
+  birthdate: 2025-07-26
+  sex: MyString
+  description: MyText
+  health: false
+  colors: MyString
+  compatibilities: MyString
+
+two:
+  name: MyString
+  primary_breed: two
+  secondary_breed: two
+  user: two
+  birthdate: 2025-07-26
+  sex: MyString
+  description: MyText
+  health: false
+  colors: MyString
+  compatibilities: MyString
