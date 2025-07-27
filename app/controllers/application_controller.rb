@@ -13,7 +13,7 @@ class ApplicationController < ActionController::API
   private
 
   def decode_token(token)
-    decoded = JWT.decode(token, Rails.application.secrets.secret_key_base)[0]
+    decoded = JWT.decode(token, Rails.application.secret_key_base)[0]
     HashWithIndifferentAccess.new decoded
   end
 end
