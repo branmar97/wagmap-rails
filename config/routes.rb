@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   post 'login', to: 'auth#login'
   resources :users, only: [:create]
+  resources :pets, only: [:index, :create, :show, :update, :destroy]
 end
