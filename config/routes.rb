@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   post 'login', to: 'auth#login'
   resources :users, only: [:create]
   resources :pets, only: [:index, :create, :show, :update, :destroy]
+  resources :spaces, only: [:index, :create, :show, :update, :destroy]
 end

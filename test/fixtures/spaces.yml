@@ -1,0 +1,62 @@
+one:
+  user: one
+  address1: "123 Test Street"
+  address2: "Apt 1A" 
+  city: "Test City"
+  state: "CA"
+  zipcode: "12345"
+  fencing_status: "fully_fenced"
+  space_size: "1000 sqft"
+  max_dogs_per_booking: 5
+  price_per_dog: 15.50
+  other_dogs_visible_audible: false
+  other_pets_visible_audible: true
+  other_people_visible_audible: false
+  status: "active"
+
+two:
+  user: two
+  address1: "456 Another Street"
+  address2: "Unit 2B"
+  city: "Other City" 
+  state: "NY"
+  zipcode: "54321"
+  fencing_status: "partially_fenced"
+  space_size: "2000 sqft"
+  max_dogs_per_booking: 8
+  price_per_dog: 25.00
+  other_dogs_visible_audible: true
+  other_pets_visible_audible: false
+  other_people_visible_audible: true
+  status: "active"
+
+three:
+  user: one
+  address1: "789 Third Avenue"
+  city: "Third City"
+  state: "TX"
+  zipcode: "78901"
+  fencing_status: "not_fenced"
+  space_size: "500 sqft"
+  max_dogs_per_booking: 2
+  price_per_dog: 10.00
+  other_dogs_visible_audible: false
+  other_pets_visible_audible: false
+  other_people_visible_audible: true
+  status: "inactive"
+
+four:
+  user: two
+  address1: "321 Fourth Street"
+  address2: "Basement"
+  city: "Fourth City"
+  state: "FL"
+  zipcode: "32109-1234"
+  fencing_status: "fully_fenced"
+  space_size: "3 acres"
+  max_dogs_per_booking: 20
+  price_per_dog: 5.75
+  other_dogs_visible_audible: true
+  other_pets_visible_audible: true
+  other_people_visible_audible: false
+  status: "active"

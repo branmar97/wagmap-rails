@@ -9,8 +9,8 @@ one:
   sex: MyString
   description: MyText
   health: false
-  colors: MyString
-  compatibilities: MyString
+  colors: [MyString]
+  compatibilities: [MyString]
 
 two:
   name: MyString
@@ -21,5 +21,5 @@ two:
   sex: MyString
   description: MyText
   health: false
-  colors: MyString
-  compatibilities: MyString
+  colors: [MyString]
+  compatibilities: [MyString]
