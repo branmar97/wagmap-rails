@@ -38,3 +38,5 @@ group :development, :test do
   gem "brakeman", require: false
 end
 
+
+gem "jbuilder", "~> 2.13"
