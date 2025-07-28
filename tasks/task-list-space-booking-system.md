@@ -12,7 +12,7 @@ This task list implements a comprehensive booking system that allows space hosts
 
 ### Setup & Infrastructure
 
-- [ ] **T001: Database Schema Setup**
+- [x] **T001: Database Schema Setup**
   - [x] Create migration for `availabilities` table
     - Add fields: space_id, day_of_week, start_time, end_time, is_active
     - Add foreign key constraint to spaces table
@@ -30,23 +30,23 @@ This task list implements a comprehensive booking system that allows space hosts
 
 ### Data Layer - Models
 
-- [ ] **T002: Model Development and Relationships**
-  - [ ] Create `Availability` model
+- [x] **T002: Model Development and Relationships**
+  - [x] Create `Availability` model
     - Define fields: space_id, day_of_week, start_time, end_time, is_active
     - Add validations for day_of_week (0-6), time formats, business logic rules
     - Add association to space (belongs_to)
     - Add scopes for active patterns, specific days, time ranges
-  - [ ] Create `Booking` model
+  - [x] Create `Booking` model
     - Define fields: space_id, user_id, booking_date, start_time, end_time, duration, status, total_price, cancellation_deadline, cancelled_at
     - Add validations for required fields, time ranges, status transitions
     - Add associations to space, user, and pets (through booking_pets)
     - Add state machine for booking status
     - Add methods for pricing calculations, cancellation rules
-  - [ ] Create `BookingPet` model
+  - [x] Create `BookingPet` model
     - Define fields: booking_id, pet_id
     - Add composite unique index on booking_id and pet_id
     - Add associations to booking and pet
-  - [ ] Update existing `Space` model
+  - [x] Update existing `Space` model
     - Add association: has_many :availabilities, dependent: :destroy
     - Add association: has_many :bookings, dependent: :destroy
     - Add instance methods for availability checking, pricing
