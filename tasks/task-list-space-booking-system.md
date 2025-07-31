@@ -54,20 +54,20 @@ This task list implements a comprehensive booking system that allows space hosts
   - **Duration:** 3-4 hours
   - **Files:** `app/models/availability.rb`, `app/models/booking.rb`, `app/models/booking_pet.rb`, `app/models/space.rb`
 
-- [ ] **T003: Booking Model**
-  - [ ] Create Booking model with all associations
+- [x] **T003: Booking Model**
+  - [x] Create Booking model with all associations
     - belongs_to :space, :renter (class_name: 'User')
     - has_many :booking_pets, :pets (through: booking_pets)
     - belongs_to :cancelled_by (class_name: 'User', optional: true)
-  - [ ] Add status enum with all states
+  - [x] Add status enum with all states
     - pending, approved, denied, cancelled, completed
     - Add status transition validations
-  - [ ] Add business logic methods
+  - [x] Add business logic methods
     - pricing calculation (price_per_dog * duration * pet_count)
     - time slot validation
     - overlap detection
     - automatic status transitions (completed after end_datetime)
-  - [ ] Add validation methods
+  - [x] Add validation methods
     - start_datetime < end_datetime
     - duration_hours matches calculated time difference
     - pet ownership validation
@@ -75,27 +75,27 @@ This task list implements a comprehensive booking system that allows space hosts
   - **Duration:** 4-5 hours
   - **Files:** `app/models/booking.rb`
 
-- [ ] **T004: BookingPet Model & Space Model Updates**
-  - [ ] Create BookingPet junction model
+- [x] **T004: BookingPet Model & Space Model Updates**
+  - [x] Create BookingPet junction model
     - belongs_to :booking, :pet
     - validation for pet ownership matching booking renter
-  - [ ] Update Pet model if needed
+  - [x] Update Pet model if needed
     - has_many :booking_pets, :bookings (through: booking_pets)
   - **Duration:** 2 hours
   - **Files:** `app/models/booking_pet.rb`, `app/models/space.rb`, `app/models/pet.rb`
 
 ### Business Logic - Services
 
-- [ ] **T005: Availability Calculator Service**
-  - [ ] Create AvailabilityCalculator service class
+- [x] **T005: Availability Calculator Service**
+  - [x] Create AvailabilityCalculator service class
     - Calculate available slots for a space and date range
     - Handle recurring patterns only (no exceptions)
     - Return time slots in React-friendly format
-  - [ ] Add methods for different calculation scenarios
+  - [x] Add methods for different calculation scenarios
     - get_available_slots(space, start_date, end_date)
     - check_slot_availability(space, start_datetime, duration)
     - get_conflicting_bookings(space, start_datetime, end_datetime)
-  - [ ] Optimize for performance with caching considerations
+  - [x] Optimize for performance with caching considerations
   - **Duration:** 3-4 hours
   - **Files:** `app/services/availability_calculator.rb`
 
